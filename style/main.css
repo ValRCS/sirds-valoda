@@ -1,0 +1,118 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+    background-color: #e0e7ec; /* Light gray with a bluish tint */
+    padding: 10%;
+}
+
+#container {
+    position: relative;
+    background-image: url('/img/jumis_sudrabs.svg');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 120px;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: left;
+}
+
+.explanatory-text {
+    font-size: 1.2rem;
+}
+
+.motto {
+    text-align: right;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.main-text {
+    text-align: center;
+    text-justify: inter-word;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.book-info, .contacts {
+    font-size: 0.96rem;
+    margin-top: 20px;
+}
+
+/* let's make book-isbn inline-block */
+.book-isbn {
+    display: inline-block;
+    /* margin-top: 10px; */
+    /* fixed width */
+    width: 325px;
+}
+
+.download-link {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #f2f2f2;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+    text-decoration: none;
+    color: #000;
+    /* fixed width */
+    width: 122px;
+    /* center text */
+    text-align: center;
+}
+/* let's add hover effect to download links 
+add 0.5 second animation */
+.download-link:hover {
+    background-color: #18db4c;
+    transition: background-color 0.5s;
+}
+
+.audio-authors {
+    font-size: 0.8rem;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 0.96rem;
+    background-color: #e0e7ec; /* Same as body but without image */
+    position: relative;
+    clear: both;
+}
+
+.book-outer-container {
+    display: flex;
+    /* wrap items */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 20px; */
+}
+
+.book-in-container {
+    width: 55%;
+}
+
+.marta-container {
+    margin-left: 30px;
+    /* width: auto;
+    height: 367px; */
+    /* small border with round corners */
+    padding: 3px;
+    border: 2px solid #18db4c;
+    border-radius: 2.5%;
+}
+
+.marta-img {
+    width: 100%;
+    height: 367px;
+    border-radius: 2%;
+}
+
+.marta-caption {
+    /* center text */
+    text-align: center;
+}
