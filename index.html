@@ -46,6 +46,14 @@
             font-size: 0.96rem;
             margin-top: 20px;
         }
+
+        /* let's make book-isbn inline-block */
+        .book-isbn {
+            display: inline-block;
+            /* margin-top: 10px; */
+            /* fixed width */
+            width: 325px;
+        }
         
         .download-link {
             display: inline-block;
@@ -56,6 +64,16 @@
             box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
             text-decoration: none;
             color: #000;
+            /* fixed width */
+            width: 122px;
+            /* center text */
+            text-align: center;
+        }
+/* let's add hover effect to download links 
+add 0.5 second animation */
+        .download-link:hover {
+            background-color: #18db4c;
+            transition: background-color 0.5s;
         }
 
         .audio-authors {
@@ -85,11 +103,11 @@ Sirds Svētā Liesma to sargā.</p>
     <p class="main-text">Gaismas un Mīlestības Skolotāja, Dziedniece Zilākalna Marta šobrīd ir klātesoša mums visiem. Dziedinošā Mīlestības enerģija, kas plūst no Viņas, Sirds centrā ir sajūtama ikvienam.</p>
     <div class="book-info">
         Grāmatas “SIRDS VALODA” lejupielādes bez maksas:<br>
-        Izdevuma ISBN 978-9934-9235-2-4 (PDF) <a href="data/SirdsValoda-gramata.pdf" class="download-link" download>Lejuplādē 
+        <span class="book-isbn">Izdevuma ISBN 978-9934-9235-2-4 (PDF) </span><a href="data/SirdsValoda-gramata.pdf" class="download-link" download>Lejuplādē 
             PDF</a><br>
-        Izdevuma ISBN 978-9934-9235-3-1 (ePUB) <a href="data/SirdsValoda-gramata.epub" class="download-link" download>Lejuplādē 
+            <span class="book-isbn">Izdevuma ISBN 978-9934-9235-3-1 (ePUB)</span> <a href="data/SirdsValoda-gramata.epub" class="download-link" download>Lejuplādē 
             ePUB</a><br>
-        Izdevuma ISBN 978-9934-9235-1-7 (audiogrāmata) <a href="data/sirds_valoda_64kbs.mp3" class="download-link" download>Lejuplādē 
+            <span class="book-isbn">Izdevuma ISBN 978-9934-9235-1-7 (audiogrāmata)</span> <a href="data/sirds_valoda_64kbs.mp3" class="download-link" download>Lejuplādē 
             MP3</a>
             <div class="audio-authors">
                 <ul>
